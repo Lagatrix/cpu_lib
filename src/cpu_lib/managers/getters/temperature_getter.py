@@ -26,7 +26,7 @@ class TemperatureGetter:
         """
         try:
             data_list: list[str] = await self.__command_manager.execute_command(
-                "cat /sys/class/thermal/thermal_zone*/temp")
+                "/bin/cat /sys/class/thermal/thermal_zone*/temp")
 
             if len(data_list) > 2:
                 return float(f"{data_list[-1][0]}{data_list[-1][1]}.{data_list[-1][2]}")

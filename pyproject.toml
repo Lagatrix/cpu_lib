@@ -91,7 +91,7 @@ clean = [ "build-clean", "doc-clean", "export-dependencies-clean", "outdated-dep
 
 [tool.sphinx-pyproject]
 html_theme = "sphinx_rtd_theme"
-copyright = 'QA Team'
+copyright = 'Lagatrix'
 extensions = ["sphinx.ext.autodoc", "sphinx.ext.napoleon"]
 autodoc_default_options = { members = true, undoc-members = true, private-members = true, ignore-module-all = true }
 
