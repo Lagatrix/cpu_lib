@@ -24,7 +24,7 @@ class InformationGetter:
         """
         command_filter: str = '/model name|vendor_id|cpu cores|siblings|cache size/'
         data_list: list[str] = await (self.__command_manager.execute_command
-                                      (f"/bin/cat /proc/cpuinfo | /bin/awk '${command_filter}'"))
+                                      (f"/bin/cat /proc/cpuinfo | /bin/awk '{command_filter}'"))
 
         return (data_list[0].split(": ")[1], data_list[1].split(": ")[1], data_list[2].split(": ")[1],
                 int(data_list[3].split(": ")[1]), int(data_list[4].split(": ")[1]))

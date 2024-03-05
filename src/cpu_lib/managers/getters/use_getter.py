@@ -23,6 +23,6 @@ class UseGetter:
             CommandError: If the exit code is not 0.
         """
         data_list: list[str] = await self.__command_manager.execute_command(
-            "/bin/top -n 1 -b | grep 'Cpu(s):' | /bin/awk '{print $2}'")
+            "/bin/top -n 1 -b | /bin/grep 'Cpu(s):' | /bin/awk '{print \\$2}'")
 
         return float(data_list[0].replace(",", "."))

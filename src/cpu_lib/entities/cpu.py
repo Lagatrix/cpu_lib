@@ -20,5 +20,5 @@ class Cpu:
     cache_size: str
     siblings: int
     cores: int
-    min_mhz_speed: int
-    max_mhz_speed: int
+    min_mhz_speed: float
+    max_mhz_speed: float
