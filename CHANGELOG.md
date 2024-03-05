@@ -7,5 +7,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## Added
 - @javierfh03 - Develop the temperature getter with mocks and tests.
 - @javierfh03 - Develop the use getter with mocks and tests.
+- @javierfh03 - Develop the information getter with mocks and tests.
 
 [Unreleased]: https://github.com/Lagatrix/cpu_lib.git
